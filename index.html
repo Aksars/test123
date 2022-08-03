@@ -1,0 +1,221 @@
+		<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop</title>
+</head>
+<body>
+	<div class="modal-wrap">
+		<div class="game-modal">
+			<div class="game-controls">
+				<input class="count-cube" type="text" placeholder="Сколько?" >
+				<button class="append-cube" >Добавить кубы</button>
+				<div class="sum-cube"><p>Количество: 1</p></div>
+				<div class="hit"><p>Попадания: 0</p></div>
+				<button class="btn-animate" id="button">Click on me</button>
+			</div>
+			<div class='cube-wrap'>
+				
+			</div>
+			<div class="close-game">
+				<div class="left-close"></div>
+				<div class="right-close"></div>
+			</div>
+			<!-- <div class="boom"><img src="images/boom.gif"></div> -->
+			
+		</div>
+	</div>
+	<header>
+		<div class="header-up">
+		
+			<ul>
+				<li class="servise-menu"><a href="">Мобильное приложение</a></li>
+				<li class="servise-menu"><a href="">Продавайте на Shop</a></li>
+				<li class="servise-menu"><a href="">Зарабатывайте с Shop</a></li>
+				<li class="servise-menu"><a href="calc.html">Калькулятор</a></li>
+				<li class="servise-menu"><a href="contacts.html">Контакты</a></li>
+				<li class="servise-menu"><a href="">Пункты выдачи</a></li>
+				<button class="game search-btn">Игра</button>
+				
+			</ul>
+
+		</div>
+		<div class="header-center">
+			<div class='title'>
+				<H2><a href="index.html">SHOP</a></H2>
+			</div>
+			<div class="directory">
+				<button>Каталог</button>
+			</div>
+			<div class="searh">
+				<input class="search-inp" type="search" placeholder="Поиск"></input>
+				<button class="search-btn">Найти</button>
+			</div>
+			<div class="icon">
+				<img src="images/personal.svg"/>
+				<img src="images/favourites.svg"/>
+				<img class="icon-basket" src="images/basket.svg"/>
+				<div class="basket-count">!</div>
+				<img src="images/delivery.svg"/>
+			</div>
+
+		</div>
+		<div class="header-down">
+			<ul>
+				<li class="horizontmenu">Top</li>
+				<li class="horizontmenu">Premium</li>
+				<li class="horizontmenu">Билеты и отели</li>
+				<li class="horizontmenu">Fresh</li>
+				<li class="horizontmenu">Счет</li>
+				<li class="horizontmenu">LIVE</li>
+				<li class="horizontmenu">Акции</li>
+				<li class="horizontmenu">Бренды</li>
+				<li class="horizontmenu">Магазины</li>
+				<li class="horizontmenu">Электроника</li>
+				<li class="horizontmenu">Одежда и Обувь</li>
+				<li class="horizontmenu">Детские товары</li>
+			</ul>
+		
+		</div>
+
+		<div class="basket-wrap">
+			<div class="basket-back"></div>
+			<div class="basket-modal">
+				<div class="basket-title"><h2>Корзина</h2></div>
+				<div class="products">
+				</div >
+				<h3 class="basket-sum">Сумма заказа: 0</h3>
+				</div>
+				<div class="close">
+					<div class="left-close"></div>
+					<div class="right-close"></div>
+				</div>
+			</div>
+
+		</div>
+	</header>
+	<div class="animate-wrap">	
+		<div class="cube1"></div>
+		<div class="cube2"></div>
+		<div class="cube3"></div>
+		<div class="cube4"></div>
+		<div class="cube5"></div>
+	</div>
+	<div class='slider-main'>
+		<div class='slider-wrap'>
+			<button class='slider-btn-left'> 	&lt;- </button>
+			<div class="slider">
+				<div class="slider-item curry">
+					<img src="images/slider-1.jpg" alt="">
+				</div>
+				<div class="slider-item">
+					<img src="images/slider-2.jpg" alt="">
+				</div>
+				<div class="slider-item">
+					<img src="images/slider-3.jpg" alt="">
+				</div>
+				<div class="slider-item">
+					<img src="images/slider-4.jpg" alt="">
+				</div>
+				<div class="slider-item">
+					<img src="images/slider-5.jpg" alt="">
+				</div>
+			</div>
+			<button class='slider-btn-right'> 	-&gt; </button>
+		</div>
+	</div>	
+  <div class="main-wrap">
+	<div class="main">
+		
+		<!--<div class="item">
+			<img src="item-2.jpg"/>
+			<div class="item-center">
+			<h2>Lorem Ipsum 1</h2>
+			<p>это текст-"рыба", часто используемый в печати и вэб-дизайне. это текст-"рыба", часто используемый в печати и вэб-дизайне. это текст-"рыба", часто используемый в печати и вэб-дизайне. это текст-"рыба", часто используемый в печати и вэб-дизайне. это текст-"рыба", часто используемый в печати и вэб-дизайне. 
+			</p>
+			</div>
+			<div class="item-right">
+				<div class="price"><p>20000 рублей</p></div>
+				<div class="amount-controls">
+					<button class="amount-btn">-</button>
+					<p class="rate">1</p>
+					<button class="amount-btn">+</button>
+				</div>
+				<div class="sum-wrap"><p class="sum">Итого: 400 рублей</p></div>
+				<div class="favorite">
+					<button class="add-to-cart" id="item1">Добавить в корзину</button>
+				</div>
+				<div class="exit" onclick="closedItem()"></div>
+			</div>
+		</div>
+		<div class="item">
+			<img src="item-2.jpg"/>
+			<div class="item-center">
+			<h2>Lorem Ipsum 2</h2>
+			<p>это текст-"рыба", часто используемый в печати и вэб-дизайне. это текст-"рыба", часто используемый в печати и вэб-дизайне. это текст-"рыба", часто используемый в печати и вэб-дизайне. это текст-"рыба", часто используемый в печати и вэб-дизайне. это текст-"рыба", часто используемый в печати и вэб-дизайне. 
+			</p>
+			</div>
+			<div class="item-right">
+				<div class="price"><p>3550 рублей</p></div>
+				<div class="amount-controls">
+					<button class="amount-btn">-</button>
+					<p class="rate">1</p>
+					<button class="amount-btn">+</button>
+				</div>
+				<div class="sum-wrap"><p class="sum">Итого: 500 рублей</p></div>
+				<div class="favorite">
+					<button class="add-to-cart" id="item2">Добавить в корзину</button>
+				</div>
+				<div class="exit" onclick="closedItem()"></div>
+				
+			</div>
+		</div>
+		<div class="item">
+			<img src="item-2.jpg"/>
+			<div class="item-center">
+			<h2>Lorem Ipsum 3</h2>
+			<p>это текст-"рыба", часто используемый в печати и вэб-дизайне. это текст-"рыба", часто используемый в печати и вэб-дизайне. это текст-"рыба", часто используемый в печати и вэб-дизайне. это текст-"рыба", часто используемый в печати и вэб-дизайне. это текст-"рыба", часто используемый в печати и вэб-дизайне. 
+			</p>
+			</div>
+			<div class="item-right">
+				<div class="price"><p>5000 рублей</p></div>
+				<div class="amount-controls">
+					<button class="amount-btn">-</button>
+					<p class="rate">1</p>
+					<button class="amount-btn">+</button>
+				</div>
+				<div class="sum-wrap"><p class="sum">Итого: 500 рублей</p></div>
+				<div class="favorite">
+					<button class="add-to-cart" id="item3">Добавить в корзину</button>
+				</div>
+				<div class="exit" onclick="closedItem()"></div>
+			</div>
+			
+		</div>  -->
+		<!--<div>
+			<div class="demo">параграф</div>
+			<button id="elem" type="button" onclick="alert(this.innerHTML)">изменить</button>
+			<div id="about">Заголовок</div>
+			<button id="btn" onclick="init()">Кнопка</button>
+			<p id="textp">Какой-то текст<p>
+			<button id="btn" onclick="changeText()">Кнопка2</button>
+			<p>Снова текст</p>
+			<div class="time-wrap">
+				<span id="timewindow">qwe</span>
+			</div>
+			<button id="time" onclick="whatTime()">Дата и Время</button>
+			<button class="success" id="successbtn" onclick="success()">Успешный успех</button>
+		</div>
+	</div>
+        -->
+  
+  </div>
+  
+<script src="jquery-3.6.0.min.js"></script>
+<!--<script src="slick.min.js"></script>-->
+<script src="add.js"></script>
+
+</body>
+</html>
